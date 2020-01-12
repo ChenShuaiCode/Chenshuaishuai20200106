@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recy_wai"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00f"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="全选"
+            android:textColor="@color/a"
+            android:textSize="25dp"
+            android:id="@+id/che_aa"></CheckBox>
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/a"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/text_pr"
+            android:text="¥0.00"
+            android:textSize="25dp"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="去付款"
+                android:textSize="25dp"
+                android:textColor="#fff"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/tv_fu"></TextView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
